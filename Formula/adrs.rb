@@ -1,8 +1,8 @@
 class Adrs < Formula
   desc "Architectural Decision Record tool in Rust"
   homepage "https://joshrotenberg.com/adrs/"
-  url "https://github.com/joshrotenberg/adrs/archive/refs/tags/v0.2.7.tar.gz"
-  sha256 "6e22047dc47ce25664d4fa271dd0bc8e93f595a3a9c63e24d39bab1e428a23c1"
+  url "https://github.com/joshrotenberg/adrs/archive/refs/tags/v0.2.8.tar.gz"
+  sha256 "91ba1a7232ea98b7c7bc32c4c2433e6aa504edcff3cfcebe6c9b21c51b5b93b8"
   license "Apache-2.0"
 
   depends_on "cmake" => :build
