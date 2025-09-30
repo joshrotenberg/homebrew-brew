@@ -8,7 +8,7 @@ class Redisctl < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install", "--path", "crates/redisctl", *std_cargo_args
   end
 
   test do
