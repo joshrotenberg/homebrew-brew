@@ -8,6 +8,14 @@ brew tap joshrotenberg/brew
 
 ## Available Formulas
 
+### [jpx](https://github.com/joshrotenberg/jmespath-extensions) - JMESPath CLI with 150+ extended functions
+
+A powerful jq alternative with 189 additional functions for strings, arrays, dates, hashing, encoding, geo, and more.
+
+```sh
+brew install jpx
+```
+
 ### [adrs](https://github.com/joshrotenberg/adrs) - Architectural Decision Record CLI
 
 ```sh
