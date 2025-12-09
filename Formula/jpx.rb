@@ -1,13 +1,13 @@
 class Jpx < Formula
   desc "JMESPath CLI with 150+ extended functions - a powerful jq alternative"
   homepage "https://github.com/joshrotenberg/jmespath-extensions"
-  version "0.1.0"
+  version "0.1.3"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.0/jpx-aarch64-apple-darwin.tar.xz"
-      sha256 "c5df4ba6786051e236b3c9d56e334ed3470c7a2c593bf1f12e79d68474be7d93"
+      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.3/jpx-x86_64-apple-darwin.tar.xz"
+      sha256 "dd1b9757e44f9a5815672e19c4af43de4633d61d9b6c84fc8f43b820f0431b4b"
     end
     on_intel do
       url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.0/jpx-x86_64-apple-darwin.tar.xz"
