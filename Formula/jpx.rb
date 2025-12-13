@@ -1,24 +1,24 @@
 class Jpx < Formula
   desc "JMESPath CLI with 150+ extended functions - a powerful jq alternative"
   homepage "https://github.com/joshrotenberg/jmespath-extensions"
-  version "0.1.10"
+  version "0.1.11"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.10/jpx-aarch64-apple-darwin.tar.xz"
-      sha256 "f7d30cbfa12bb09bc44a24082478be5fadd5f37c45d5506d3e5de1d5af980f71"
+      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.11/jpx-aarch64-apple-darwin.tar.xz"
+      sha256 "f67200b58e23fab7bafea35a00176fc88be845985a20e486eae253dcbd40c1ab"
     end
     on_intel do
-      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.10/jpx-x86_64-apple-darwin.tar.xz"
-      sha256 "2df1d91fcb15016e0cc5d9c8b3d897dd55f636e1310476245ebaa3d0a326f7f0"
+      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.11/jpx-x86_64-apple-darwin.tar.xz"
+      sha256 "7ddb877eb2de101d756a4ef6f71e7acc8c03a8bd9e580ac58289ec814202a6e0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.10/jpx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d5772bcae8f5c75d5d938423e69c7b0ec9edfeeb8bd630b4374d2e018b4edc64"
+      url "https://github.com/joshrotenberg/jmespath-extensions/releases/download/jpx-v0.1.11/jpx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "50dbc643cfd2f98c64ce901c3ddf23acfb4208fdb9e0bdce9fe877c8ff8f64d1"
     end
   end
 
