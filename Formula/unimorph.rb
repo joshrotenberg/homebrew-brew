@@ -1,8 +1,8 @@
 class Unimorph < Formula
   desc "Complete toolkit for working with UniMorph morphological data"
   homepage "https://github.com/joshrotenberg/unimorph-rs"
-  url "https://github.com/joshrotenberg/unimorph-rs/archive/refs/tags/unimorph-v0.1.6.tar.gz"
-  sha256 "0a096468494771ad935e2af5f6804315af40cd38e0ede4394e5ecae59379cff1"
+  url "https://github.com/joshrotenberg/unimorph-rs/archive/refs/tags/unimorph-v0.1.7.tar.gz"
+  sha256 "27b29747d3078ac2b432f30087d65faa4fa9a679d0b7d2e5e69c4ae4095c01f9"
   license "Apache-2.0"
 
   depends_on "rust" => :build
