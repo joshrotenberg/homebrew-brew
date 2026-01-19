@@ -1,25 +1,25 @@
 class Unimorph < Formula
   desc "Command-line interface for UniMorph morphological data"
   homepage "https://joshrotenberg.github.io/unimorph-rs/"
-  version "0.1.8"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.1.8/unimorph-aarch64-apple-darwin.tar.xz"
-      sha256 "ca8d3461c879ec3d45966deb986d22be880c49d2307602911847f16becdd4697"
+      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.2.1/unimorph-aarch64-apple-darwin.tar.xz"
+      sha256 "f7ee0f9df31f841216b4ca4cfcb8b20b0b1f2c7618ad4a2a022666830ef46f72"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.1.8/unimorph-x86_64-apple-darwin.tar.xz"
-      sha256 "767e8dcb05260b70fbc16d3dd0915852829c76cebea9b1356ffe268b3cc9d8d4"
+      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.2.1/unimorph-x86_64-apple-darwin.tar.xz"
+      sha256 "77d0c95c877db2a1f59daa4f825f7d9ed42bf0ef7ce5d8476f2a13c8402e7bfa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.1.8/unimorph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "11f166cbbc985fd637642c6492d13b81585d1160bfebd6bb05e578d3760e9b3e"
+      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.2.1/unimorph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b4dd51d49ddfb9d0ba05da812250af67b7404ed761da22f8b6f9aeddd300874a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.1.8/unimorph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b9c5485e980a0e4a7d22af5a2e72632cc964653a516bec82a03573dd60fea6e4"
+      url "https://github.com/joshrotenberg/unimorph-rs/releases/download/unimorph-v0.2.1/unimorph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "596109837c5c9d4eee0d3b4d2cb6e99fa89e1748314f944cdc0c1d57a4593c20"
     end
   end
   license "Apache-2.0"
