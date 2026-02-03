@@ -1,24 +1,24 @@
 class Jpx < Formula
   desc "JMESPath CLI with 400+ extended functions - a powerful jq alternative"
   homepage "https://github.com/joshrotenberg/jpx"
-  version "0.2.2"
+  version "0.3.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.2.2/jpx-aarch64-apple-darwin.tar.xz"
-      sha256 "add62f1f93b10e6d1e563735c0077c83410f8535ffecfaa8ae6c0016ff799020"
+      url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.3.0/jpx-aarch64-apple-darwin.tar.xz"
+      sha256 "f5172e8ef8171608420a1306b9e7e9f9b32c902c576754248e458879c77ebb77"
     end
     on_intel do
-      url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.2.2/jpx-x86_64-apple-darwin.tar.xz"
-      sha256 "10a8fdf3ba22de1ce6a20b913604475f45b9c4cffbec8dec391c439efb46325a"
+      url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.3.0/jpx-x86_64-apple-darwin.tar.xz"
+      sha256 "24e96e4f3d1aba1b6164b56fc7aea71ca7323fc1a236fd483df64736e84e7c80"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.2.2/jpx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "467f2b1c6edb6c7ee4993d1d2efb0bde352722cd16047bbcc5a1e9dc98d46349"
+      url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.3.0/jpx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0cc6522557fbdc58b923320547aff1998ea8e1296bc0f8275a9287ca2122acd4"
     end
   end
 
