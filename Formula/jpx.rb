@@ -7,18 +7,18 @@ class Jpx < Formula
   on_macos do
     on_arm do
       url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.3.0/jpx-aarch64-apple-darwin.tar.xz"
-      sha256 "f5172e8ef8171608420a1306b9e7e9f9b32c902c576754248e458879c77ebb77"
+      sha256 "6dbcc2315a68f6b239afface9416a14b9e0a06bb458455c8f4c00cf8f73e1920"
     end
     on_intel do
       url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.3.0/jpx-x86_64-apple-darwin.tar.xz"
-      sha256 "24e96e4f3d1aba1b6164b56fc7aea71ca7323fc1a236fd483df64736e84e7c80"
+      sha256 "7f2f011c98df4a78301a4703fad7a6c7a6b48f21023def79d2461eec31f33df5"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/joshrotenberg/jpx/releases/download/jpx-v0.3.0/jpx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0cc6522557fbdc58b923320547aff1998ea8e1296bc0f8275a9287ca2122acd4"
+      sha256 "48f83815b8c77b4ef9a53bccd4c51e2df7e547b50eee744bc60fd71f454eca0d"
     end
   end
 
