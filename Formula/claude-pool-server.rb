@@ -1,25 +1,25 @@
 class ClaudePoolServer < Formula
   desc "MCP server binary for claude-pool"
   homepage "https://github.com/joshrotenberg/claude-wrapper"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.2.0/claude-pool-server-aarch64-apple-darwin.tar.xz"
-      sha256 "0a38efd5b2d780b7d25c7cb85ece5b390d2ad9b18e4f802c5c7a4f48ba15d826"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.3.0/claude-pool-server-aarch64-apple-darwin.tar.xz"
+      sha256 "a8922cd3b215ad09bdc8331e973cb3d765fee7376d0abfc6a4da5e94ff7fda33"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.2.0/claude-pool-server-x86_64-apple-darwin.tar.xz"
-      sha256 "eee82ca4b4d4602cd2eac490049bb1f3f49993faa70ed6cadd0ab155765f92cf"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.3.0/claude-pool-server-x86_64-apple-darwin.tar.xz"
+      sha256 "b922bd4f6b0dde3de19a09930b356ee1e61264afd15fea5b33cb23591bc4b4ce"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.2.0/claude-pool-server-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2715b3e3a41c27239e2b1564cbe160890f4bc59b3ba48ab9a38ab9826a3e6d60"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.3.0/claude-pool-server-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7232f004a73c8f9e944a4bde0203bd2eadb3e57e838571c83e8969e62f22e160"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.2.0/claude-pool-server-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e85daa6812dfd52fd65801fc4cde2962e688b01a30c00f8eb61169f422e8eeeb"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-server-v0.3.0/claude-pool-server-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fff6a36882cc183cb23a0b6b1625dffd264d44f8db5185d256cb52f41c2ff0f4"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
