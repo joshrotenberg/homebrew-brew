@@ -1,25 +1,25 @@
 class ClaudePoolMcp < Formula
   desc "Thin MCP server exposing claude-pool as tools"
   homepage "https://github.com/joshrotenberg/claude-wrapper"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.0/claude-pool-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "7cae7292bfae947e3f7909b162075489eb074b3af0a258ec9fd20b2bee4881ce"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.1/claude-pool-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "d925d0c83c11e37d194d88f840a4cec101394a705d05f553133fa9446d046a98"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.0/claude-pool-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "498b3d964cefb033a0a3aff8855d2515bdf01726787c9d3bbbe9da0c8847c8b2"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.1/claude-pool-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "94e395838f637e4dadec2fd842274cd3b7364ad385196ff19a3800a0c2cbebf1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.0/claude-pool-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "af736f41b7c8ab18e188124497ba363edc1dbb33583017ae297deea9f799efd1"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.1/claude-pool-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "665175e3a45e2d14c975f7cfc57a9eef2de78401b2aed8d8a2a5b444364c7adf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.0/claude-pool-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2e431cc2eefdeaaae7f66ca0cc6fc4e62a0529b957f744fc0909c22fa008488c"
+      url "https://github.com/joshrotenberg/claude-wrapper/releases/download/claude-pool-mcp-v0.1.1/claude-pool-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c88b9d296a1601b341a125bc9cce7086f0801857571d1f36d29299ef2cd323fc"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
