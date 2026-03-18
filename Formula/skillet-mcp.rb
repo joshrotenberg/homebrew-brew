@@ -1,25 +1,25 @@
 class SkilletMcp < Formula
   desc "MCP-native skill discovery for AI agents"
   homepage "https://github.com/joshrotenberg/skillet"
-  version "0.5.0"
+  version "0.5.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.0/skillet-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "b5c8cbd6bc1cd65ac7fafa653a71ba2640ee16a4c4009b0189b610ef4f8a02e9"
+      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.1/skillet-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "545845c39e51129771f6501ea0182e0cca81c9a8642b69be556cd1c61f815388"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.0/skillet-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "98002ec45bc780c1084c1422b3d59ef791454389a9dc45ee9c8e5fccae62e36a"
+      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.1/skillet-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "7978b48e675f68c7dd3a188ea3b9f635f4457707044b803dc31130c57af04ac6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.0/skillet-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ae27129cc21405013a46d798aa5e6f069180a5077b15ee5ed09294ea261cd276"
+      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.1/skillet-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "21e6b22b7e793191e33a776b07a469083b80035e274e57320f4ca7c94451d773"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.0/skillet-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5a24b1406e96e7ae3ced623b33948fab7cc9a5fba11e6efb14bab58a81defc84"
+      url "https://github.com/joshrotenberg/skillet/releases/download/v0.5.1/skillet-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "524465099968701897a52bb244ffd15f85fbb1e806333b469234738c4526189c"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
