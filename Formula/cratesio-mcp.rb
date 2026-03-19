@@ -1,25 +1,25 @@
 class CratesioMcp < Formula
   desc "MCP server for querying crates.io - the Rust package registry"
   homepage "https://github.com/joshrotenberg/cratesio-mcp"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.3/cratesio-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "9ba55dfb13dbb08f8275e1373051dbe911e6ac2874a474fc6e4e691cca01c87c"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.4/cratesio-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "656bbab6bb792247230f2232aa2282e0f92c2a448093a02a1c63bf85638dc7de"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.3/cratesio-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "9d2a6401f14bde153df3dc72d7a9f70daa595e8624a393ce071df32fb53e1823"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.4/cratesio-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "d5d48e888d6616e121abe498936899ce0f67ad80482cd726e5abf97d23d3c928"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.3/cratesio-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3910ffd5fdca0a05762b12b0b313356229814c69d2fbc6f976cecf2e6ef28a7d"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.4/cratesio-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ec7c6bdbd3b92d331fe1256ed4a7ce69e14a7bc13446e387e5796f99a9bb3431"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.3/cratesio-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3e0a0f52692ef0578711b91f20b4942ca1c2ada1894a4dc8b9621405daa760f6"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.1.4/cratesio-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7750bb2a181e2c3090118ce88c9463c0f3a2e208bcdfa99d703dfae6c3235c3d"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
