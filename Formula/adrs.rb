@@ -1,25 +1,25 @@
 class Adrs < Formula
   desc "Command line tool for managing Architecture Decision Records"
   homepage "https://github.com/joshrotenberg/adrs"
-  version "0.7.2"
+  version "0.7.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.2/adrs-aarch64-apple-darwin.tar.xz"
-      sha256 "df725e0fc5d17910d6e11b6f98f084032640c5e4e759f839dd791e78ee285483"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.3/adrs-aarch64-apple-darwin.tar.xz"
+      sha256 "0281b0e740dfcad6a5c61caa35b2b3ef7f5edfca5c7adc2cb794fc7c6854c082"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.2/adrs-x86_64-apple-darwin.tar.xz"
-      sha256 "74e4f1bfc16ba9b2a32681ea92c64928defa5125b7759c109ba5198e620ee20d"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.3/adrs-x86_64-apple-darwin.tar.xz"
+      sha256 "b9d70307343814f5ddd0510cebdfba0a2884f0577a43f12704d2fba8bce44bc2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.2/adrs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3a3ca1966dd259cb1bba2b2ab95f1637dbc7273ec4aa5ec35e9a5cf9ee97aa99"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.3/adrs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "544d3b5e5dea75a341a400db10d8662023ef9641b641353b7aa99745db67553c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.2/adrs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "824db28002f5b0e31c2bb8e42a1ae7c87265323980e202fc18302697f5ec1df2"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.3/adrs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "dc5848a324c29b565247962a8cd05d0aba3191cd35e5e01334444e60abb0fd16"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
