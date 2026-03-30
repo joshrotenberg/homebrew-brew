@@ -1,25 +1,25 @@
 class Forza < Formula
   desc "Configurable workflow orchestrator for agent driven software development"
   homepage "https://github.com/joshrotenberg/forza"
-  version "0.5.2"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.5.2/forza-aarch64-apple-darwin.tar.xz"
-      sha256 "1c04fee7565c90c46264a3f79a0df48cf690d55e228cad76af9583a316e9d5ba"
+      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.6.0/forza-aarch64-apple-darwin.tar.xz"
+      sha256 "bc4ba4317934f0dd383fe6042cd49bc8375abae2e4c3ae3c834ebe945821ced8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.5.2/forza-x86_64-apple-darwin.tar.xz"
-      sha256 "6ecc903ad2fffc36754e2f174740f65907a6b22b782d5029d186d92dc7f0122a"
+      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.6.0/forza-x86_64-apple-darwin.tar.xz"
+      sha256 "e1f50ed1992394cef9ba2187251c4d00d8729e7530203f3f52bfb3d639a046a4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.5.2/forza-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "04c221bd6f4c6628789b34fe145bd227a7915860023bd0b91259cdbcf3a5dbc0"
+      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.6.0/forza-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f7ab3ccedad9f7fe0cf4cdb311ed6d6c1ae8f80e59c9b245880a489ae6b6134f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.5.2/forza-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c5688cd9c238dc030fc965c626a1100520b5862261b8b666b3d36a5d18403896"
+      url "https://github.com/joshrotenberg/forza/releases/download/forza-v0.6.0/forza-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c39eaf57ff0c4a99c6a64e55bb0083ed63bfdf7e3e7dc769a7efeecb3380f1d9"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
