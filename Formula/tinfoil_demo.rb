@@ -5,28 +5,28 @@
 class TinfoilDemo < Formula
   desc "tinfoil_demo CLI"
   homepage "https://github.com/joshrotenberg/tinfoil_demo"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.0/tinfoil_demo-0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5c2e342d7a585be7f93ab4bf4bad774bcda307f2aca2b2b3f7588a338d9eeefd"
+      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.1/tinfoil_demo-0.7.1-aarch64-apple-darwin.tar.gz"
+      sha256 "a50022fd166180802e90a7476ae0be130f7dd21a0cc93008a22be7ab69b5314a"
     end
     on_intel do
-      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.0/tinfoil_demo-0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "960a656d893f1314ea506e63760a5cfa6b17d41f24763ce581b252a93edf5af3"
+      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.1/tinfoil_demo-0.7.1-x86_64-apple-darwin.tar.gz"
+      sha256 "5688f343e1a74f32290d82f53539088842c93091457c41c9633da45c131f5a9d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.0/tinfoil_demo-0.7.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4cd9d366456e9ce2229dfade2a30f755823235b5f9db8493b02e64cb6db97fa6"
+      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.1/tinfoil_demo-0.7.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "831aff0a2f6cf697f726a65edc5666ca7cb6cf58cc03ffe98bac697fc196bc6d"
     end
     on_intel do
-      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.0/tinfoil_demo-0.7.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b2671ff82aa9ff51914b2d7edfe2d865d6e5872c350088a55c3612eb4fae9965"
+      url "https://github.com/joshrotenberg/tinfoil_demo/releases/download/v0.7.1/tinfoil_demo-0.7.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "098dd147ab71b3a16ba1c3d1690316b1efb2edfe7f13d878e036969c4cc05c3c"
     end
   end
 
