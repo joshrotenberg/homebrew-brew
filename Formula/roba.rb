@@ -1,25 +1,25 @@
 class Roba < Formula
   desc "Single-prompt CLI runner built on claude-wrapper"
   homepage "https://github.com/joshrotenberg/roba"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.3.1/roba-aarch64-apple-darwin.tar.xz"
-      sha256 "f2a72d3243e07b45d8ab1e85eae71848b3e575932acf27905bafce0119da08ce"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.4.0/roba-aarch64-apple-darwin.tar.xz"
+      sha256 "9c3cb52f13b91f7bc1da45070f50b3b15b1749526ba98b9e6883bc33fc15a692"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.3.1/roba-x86_64-apple-darwin.tar.xz"
-      sha256 "9a6c78f339f311d8d55511a4d0c25e72a455a7fdcdb5f280531fd281b5e9ce48"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.4.0/roba-x86_64-apple-darwin.tar.xz"
+      sha256 "3ad5674e7a423b67e489ef25a980c7e24589862ad0d3039e43c8758e718f7ee8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.3.1/roba-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f4f7f84f27671c0dad21cfed2f643681bd6fdcef53471c2463b09f7df5bf9daa"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.4.0/roba-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0368e7479f55f406e8f34875c93865b52aacf7110fb63a45b917c0044c4d0682"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.3.1/roba-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "438b3e13a1d08a3d3239315d6d53be289ef5d2b32202927a6117f1ac2fbd9ada"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.4.0/roba-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c8bd515236ae81dd1f7d3737aaf4f8316476e7afbce7c98c765081d0f0d0f79a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
