@@ -1,25 +1,25 @@
 class McpProxy < Formula
   desc "Standalone MCP proxy -- config-driven reverse proxy with auth, rate limiting, and observability"
   homepage "https://github.com/joshrotenberg/mcp-proxy"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.3.1/mcp-proxy-aarch64-apple-darwin.tar.xz"
-      sha256 "7c091b456e96bd120f6c24066f32574f7fd0b34e99620654c792dd4dae3edf24"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-aarch64-apple-darwin.tar.xz"
+      sha256 "c9509e5205835cc8e31401fdba0fe7ed570e9a1fcc90055f9aa8e19eb4ba1452"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.3.1/mcp-proxy-x86_64-apple-darwin.tar.xz"
-      sha256 "8fbe883b49baa7f78173cbf3e8c1d83e98623c3f56f79be13b92dd420c82e8b9"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-x86_64-apple-darwin.tar.xz"
+      sha256 "97ec8f4f078fae300dde978ede07755d3430f5de8a240e3c68fea71008f773ee"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.3.1/mcp-proxy-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5203c4c241f8972b696cbaaa02c04d368f823f749bce93282ea29034aed148be"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "52259cfc51a1e7ec4c128fb3841aaad3f1fc83a70af987ecdf7c974807c27aa1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.3.1/mcp-proxy-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a4d1b45f7dcb3af921f8daee1a7d7d2f8f87b16c02d756eb85c4297444ddfc2a"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2e7d9366df3e28fbeac095f5d2bd0bd61b08418c466b56892bd4b93f1e7c0e5a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
