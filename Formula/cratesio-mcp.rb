@@ -1,25 +1,25 @@
 class CratesioMcp < Formula
   desc "MCP server for querying crates.io - the Rust package registry"
   homepage "https://github.com/joshrotenberg/cratesio-mcp"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.0/cratesio-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "50dac6bdf3af36319e61a1f929abac234b86598ebc3e90704c6e78844b4a359e"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.1/cratesio-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "78ae50b12bcfcb1704bd994bfe102d1bad07a13a5102a0c47511f8bd13d7cf86"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.0/cratesio-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "01996370d78e9ace6786bd36eac915b189d03c5b37689e0d2f6b90f7e171fd1a"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.1/cratesio-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "f3c61f45d09d783a1d810b71c04dd252777b8fccf5ddcdb663528e6156f7182c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.0/cratesio-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "12288ea1ddf272f41429e7f5f33349fcb3d59535c6f41aee332dec061a70395a"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.1/cratesio-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6365ed3d2df615155fbd84f3389b1d1cb922aeaf7e792069b96fea854555078a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.0/cratesio-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "12d6fef7b192d5531bcf9eac596d814425490ee73c942d2b5a4b7f161bb65b56"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.2.1/cratesio-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cb9c7bd6dd802edca6478ef898abfa9ac58d838a98551c40768685f7607da0f0"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
