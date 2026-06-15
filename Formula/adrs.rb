@@ -1,36 +1,36 @@
 class Adrs < Formula
   desc "Command line tool for managing Architecture Decision Records"
   homepage "https://joshrotenberg.com/adrs/"
-  version "0.7.6"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.6/adrs-aarch64-apple-darwin.tar.xz"
-      sha256 "ba16b25dc5621c19327be2b257a744495452787d7c924b8ca99a4a57f6dacbd3"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.8.0/adrs-aarch64-apple-darwin.tar.xz"
+      sha256 "6ec037aff245547a41bb75bd12d0d3f7c4262e4a2ed0fb2db72c9de269d498d1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.6/adrs-x86_64-apple-darwin.tar.xz"
-      sha256 "2d7f439cdfe12d456255f6e60943d18d56d3e0ac555319c25803f0d72ab03ac8"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.8.0/adrs-x86_64-apple-darwin.tar.xz"
+      sha256 "eb1d1b8cfc04ca4188a8f7ba617fbdbf7c65547132d23690a6b79a335700e2cc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.6/adrs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8d0b95eb8d89a46455e997b5dfcb4ec3c0239a6c964e15c6fb2e19921e6cf636"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.8.0/adrs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8de5c9bf8aeb3d4062f53709b91f123b1ba7f0c1ff637fb8d835795869021f7f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/adrs/releases/download/v0.7.6/adrs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4042a8833cf1bb88d510bc3391afe51bbe90b823ffaac5c3f93a0b2db11de2a5"
+      url "https://github.com/joshrotenberg/adrs/releases/download/v0.8.0/adrs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6bb7e62d8e6bdd051e6ee31842ab170bc0ad417cb58c5dd4b6487b598ac85ad1"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
@@ -48,18 +48,10 @@ class Adrs < Formula
   end
 
   def install
-    if OS.mac? && Hardware::CPU.arm?
-      bin.install "adrs"
-    end
-    if OS.mac? && Hardware::CPU.intel?
-      bin.install "adrs"
-    end
-    if OS.linux? && Hardware::CPU.arm?
-      bin.install "adrs"
-    end
-    if OS.linux? && Hardware::CPU.intel?
-      bin.install "adrs"
-    end
+    bin.install "adrs" if OS.mac? && Hardware::CPU.arm?
+    bin.install "adrs" if OS.mac? && Hardware::CPU.intel?
+    bin.install "adrs" if OS.linux? && Hardware::CPU.arm?
+    bin.install "adrs" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
