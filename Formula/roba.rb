@@ -1,25 +1,25 @@
 class Roba < Formula
   desc "A sharp, focused sugaring of claude -p -- pipeable, composable, safe-by-default, session-re-enterable."
   homepage "https://github.com/joshrotenberg/roba"
-  version "0.8.1"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.8.1/roba-aarch64-apple-darwin.tar.xz"
-      sha256 "91eaa255a21353872526e03ea8a1ced36bc065c30abe6456f7a88a0a0b36d099"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.9.0/roba-aarch64-apple-darwin.tar.xz"
+      sha256 "3c3fa491f74b38c0d2f93655ad814485eb08838ed5146eb6e26fd9f34811ee0f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.8.1/roba-x86_64-apple-darwin.tar.xz"
-      sha256 "254c4256522c34f706fe8b170b1bcfc56c9ec5cb42c7813472da581e51aa5896"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.9.0/roba-x86_64-apple-darwin.tar.xz"
+      sha256 "d1c88f5361fec9c53940234cdbf26119505e0ca5b72414ed9e873d98bc29cccf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.8.1/roba-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4718627047787b16972c82eb976ba555e7b55a17552dae6dbbd484a62d942222"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.9.0/roba-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c0622a773cb9cf5ae5968ebdc119f579bfb4d6db633c6d29e31bb0b802b6dbbe"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.8.1/roba-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8ebc84c142f08cd6fb05eb9a58f4200c5b3a6ab7f66dfc6908b657ca7e9942dc"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.9.0/roba-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9985437dffd1fb5ad93dca70bdfe76183eee46c32ea6175e6fb9b53272b5e9e9"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
