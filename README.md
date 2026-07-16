@@ -16,12 +16,6 @@ A powerful jq alternative with 189 additional functions for strings, arrays, dat
 brew install jpx
 ```
 
-### [adrs](https://github.com/joshrotenberg/adrs) - Architectural Decision Record CLI
-
-```sh
-brew install adrs
-```
-
 ### [mdbook-lint](https://github.com/joshrotenberg/mdbook-lint) - Fast markdown linter for mdBook projects
 
 ```sh
