@@ -1,25 +1,25 @@
 class Roba < Formula
-  desc "A sharp, focused sugaring of claude -p -- pipeable, composable, safe-by-default, session-re-enterable."
+  desc "A single-prompt CLI runner on top of claude -p: one invocation, one answer. Composable input, pipe-clean output, re-enterable sessions, a stable scripting ABI."
   homepage "https://github.com/joshrotenberg/roba"
-  version "0.10.1"
+  version "0.11.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.10.1/roba-aarch64-apple-darwin.tar.xz"
-      sha256 "040ca1f4641a0679bae3a74d83bc8fa7a57c9368d52b2737fe61ace2411c89bf"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-aarch64-apple-darwin.tar.xz"
+      sha256 "5e876374884bad5274f8f4247b1d5554ddd99b3402622eb0683a942abbcb0b96"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.10.1/roba-x86_64-apple-darwin.tar.xz"
-      sha256 "fff52322cbd68e8cb210cc32217800d5305cef642c90448ec210642530c785d8"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-x86_64-apple-darwin.tar.xz"
+      sha256 "099fb5e1e5b789a6ac852a890ff427ac6cf1c22214fd472597577e536860b04f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.10.1/roba-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "736260db499b4fe0a9fa0b4922fa89d1f80943c80bb4bb6fe45974aca9bde3f8"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "93c1ccc2a4b03784ca9f56fae304166a5d3d8972acce462ab95cf4a4ae83a346"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.10.1/roba-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4901abfe5f5b3ff8556874df1edb2680e4d6adbbbe93a776aaf39607893772ff"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8cd8f4248734431564799a39d08e67285e63d58d3a25b03d195762028d994a8a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
