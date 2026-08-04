@@ -40,7 +40,7 @@ class McpProxy < Formula
   end
 
   def install_binary_aliases!
-    BINARY_ALIASES[target_triple.to_sym].each do |source, dests|
+    BINARY_ALIASES[target_triple].each do |source, dests|
       dests.each do |dest|
         bin.install_symlink bin/source.to_s => dest
       end
