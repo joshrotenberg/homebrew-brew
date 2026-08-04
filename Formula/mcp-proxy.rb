@@ -1,25 +1,25 @@
 class McpProxy < Formula
-  desc "Standalone MCP proxy -- config-driven reverse proxy with auth, rate limiting, and observability"
+  desc "Tower-native MCP gateway for aggregating backends with auth, resilience, and observability"
   homepage "https://github.com/joshrotenberg/mcp-proxy"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-aarch64-apple-darwin.tar.xz"
-      sha256 "c9509e5205835cc8e31401fdba0fe7ed570e9a1fcc90055f9aa8e19eb4ba1452"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.1/mcp-proxy-aarch64-apple-darwin.tar.xz"
+      sha256 "c18f9f72b90b599f0e3b4199993d53faf74d41b4692f4fc82950648057b5000d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-x86_64-apple-darwin.tar.xz"
-      sha256 "97ec8f4f078fae300dde978ede07755d3430f5de8a240e3c68fea71008f773ee"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.1/mcp-proxy-x86_64-apple-darwin.tar.xz"
+      sha256 "f5b11eb34b8c97bc2c45b9ab3c50f7b30a7845d0c0c719dca590dbe83472813e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "52259cfc51a1e7ec4c128fb3841aaad3f1fc83a70af987ecdf7c974807c27aa1"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.1/mcp-proxy-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "981b33ad13b9ebb3ba4b07bbb0b9ea2ab8c27d4432cc2b889aa04506fcd45319"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.0/mcp-proxy-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2e7d9366df3e28fbeac095f5d2bd0bd61b08418c466b56892bd4b93f1e7c0e5a"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.4.1/mcp-proxy-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e0e361122d69ba7573c75a20f4c4f254f8043e4296a6977b67ed37e8bb8231d7"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
