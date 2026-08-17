@@ -1,25 +1,25 @@
 class Roba < Formula
-  desc "A single-prompt CLI runner on top of claude -p: one invocation, one answer. Composable input, pipe-clean output, re-enterable sessions, a stable scripting ABI."
+  desc "A library-first finite agent runner with Claude and Codex adapters."
   homepage "https://github.com/joshrotenberg/roba"
-  version "0.11.0"
+  version "0.12.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-aarch64-apple-darwin.tar.xz"
-      sha256 "5e876374884bad5274f8f4247b1d5554ddd99b3402622eb0683a942abbcb0b96"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.12.0/roba-aarch64-apple-darwin.tar.xz"
+      sha256 "ac090591125093c813a1ea74e84495d91828945760658da0ad55468631a1fce1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-x86_64-apple-darwin.tar.xz"
-      sha256 "099fb5e1e5b789a6ac852a890ff427ac6cf1c22214fd472597577e536860b04f"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.12.0/roba-x86_64-apple-darwin.tar.xz"
+      sha256 "18f40e0604fa1d8c1e5a636adb8a6f7f5ec278bf435f7e093eb2f629a5c5d99f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "93c1ccc2a4b03784ca9f56fae304166a5d3d8972acce462ab95cf4a4ae83a346"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.12.0/roba-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "acb8a2458dca2ea20b08b3dfc4330aa3cf4ba7985c76da3ec8f8de5ca1fb8e03"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/roba/releases/download/v0.11.0/roba-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8cd8f4248734431564799a39d08e67285e63d58d3a25b03d195762028d994a8a"
+      url "https://github.com/joshrotenberg/roba/releases/download/v0.12.0/roba-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "acb58f151ebfe6a626bb8b47e0a6f52c25221ad6a8e3afcc1370d45b86b3f321"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -48,10 +48,18 @@ class Roba < Formula
   end
 
   def install
-    bin.install "roba" if OS.mac? && Hardware::CPU.arm?
-    bin.install "roba" if OS.mac? && Hardware::CPU.intel?
-    bin.install "roba" if OS.linux? && Hardware::CPU.arm?
-    bin.install "roba" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "roba"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "roba"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "roba"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "roba"
+    end
 
     install_binary_aliases!
 
