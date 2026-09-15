@@ -1,25 +1,25 @@
 class McpRepl < Formula
   desc "Interactive MCP client that turns a server's surface into terminal commands"
   homepage "https://github.com/joshrotenberg/mcp-repl"
-  version "0.3.7"
+  version "0.3.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.7/mcp-repl-aarch64-apple-darwin.tar.gz"
-      sha256 "c6be31e08ed9cc938d2adba04868ab93276b63e9c5be0ef7066f150815488656"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.8/mcp-repl-aarch64-apple-darwin.tar.gz"
+      sha256 "a0be02c8a04d79d6742a197a572e281befb2a5ce685801a5ee9aa2704c08f438"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.7/mcp-repl-x86_64-apple-darwin.tar.gz"
-      sha256 "0233bfc6ebaf21074ef908eaa6e722430597e4db31f10f8bb874d9219c4b4e73"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.8/mcp-repl-x86_64-apple-darwin.tar.gz"
+      sha256 "a912e3d8bc0ff3bf8fb8ec4d1eb8de7b7222ba6e27c88eca56ef0d94ccc41718"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.7/mcp-repl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0b5782e41c9d8d136a632e8faf3923e2490635507d8016736f28a1e8dc0b4a7b"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.8/mcp-repl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bf6077cf5d33dd24f7f7d57e183212fa5b3dc7c0284847ae8b0751293d5f77e7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.7/mcp-repl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a28c15339b52767d399fcea6398b3a1bba09d07535f68effa7920c4b8fee1ae9"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.8/mcp-repl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d8552acdb9df403975d7c986fb3b519063f9041e6dd297890a97006736787071"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
