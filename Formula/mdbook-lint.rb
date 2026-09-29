@@ -1,8 +1,8 @@
 class MdbookLint < Formula
   desc "Fast markdown linter for mdBook projects"
   homepage "https://github.com/joshrotenberg/mdbook-lint"
-  url "https://github.com/joshrotenberg/mdbook-lint/archive/refs/tags/v0.16.1.tar.gz"
-  sha256 "aca04873fbb34287f158e2b614163f9b5691a790f66021ec5191fb4112198784"
+  url "https://github.com/joshrotenberg/mdbook-lint/archive/refs/tags/v0.16.2.tar.gz"
+  sha256 "5ba7d9796452fdaa779aed9fa48cd83ea74afd55fe22aba904c4a76225aca057"
   license "MIT"
 
   depends_on "rust" => :build
