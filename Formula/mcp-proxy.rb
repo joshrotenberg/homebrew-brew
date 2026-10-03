@@ -1,25 +1,25 @@
 class McpProxy < Formula
   desc "Tower-native MCP gateway for aggregating backends with auth, resilience, and observability"
   homepage "https://github.com/joshrotenberg/mcp-proxy"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.5.0/mcp-proxy-aarch64-apple-darwin.tar.xz"
-      sha256 "4cd164cce1c9adf210ffb23dc6202d75121981c41821e35f3c36fb7e763e9a79"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.6.0/mcp-proxy-aarch64-apple-darwin.tar.xz"
+      sha256 "26e98ee123dd5887587bdcd82092995721bed1dd956ecd0274b61d56e91a45e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.5.0/mcp-proxy-x86_64-apple-darwin.tar.xz"
-      sha256 "952797be497b5f62e9b9497520eea4e22a0ef59a191d6770093c3bf670aa3f40"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.6.0/mcp-proxy-x86_64-apple-darwin.tar.xz"
+      sha256 "56797e1381fe5af6dcef33ecaaff546be455379ce192680e2c640d1beec8932d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.5.0/mcp-proxy-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e222a350483ec5f537745553e174a9718eb1f5407fb6d88e394dd9849edb6bd5"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.6.0/mcp-proxy-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a8c1a98b49885c2a7835f1ca34253d70967a235c9946bd0435cc25941b52b22e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.5.0/mcp-proxy-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5f62a7a19614808df4393ead0047d5606d5eb6281327bf744fc489ba0d98a9df"
+      url "https://github.com/joshrotenberg/mcp-proxy/releases/download/v0.6.0/mcp-proxy-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7f05ed358d1866feca6704b52f0d8e8610c2c7b587eced489838771a5400c09b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
