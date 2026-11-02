@@ -1,25 +1,25 @@
 class CratesioMcp < Formula
   desc "MCP server for querying crates.io - the Rust package registry"
   homepage "https://github.com/joshrotenberg/cratesio-mcp"
-  version "0.4.1"
+  version "0.4.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.1/cratesio-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "603c85ee08a7077cedff68834a78de2ab1b77862afd18004438acd13ffb8054e"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.2/cratesio-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "87a0da64d9c3611016316960943a93ced3324c84e96fb2f2c2f6d769510d3ed2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.1/cratesio-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "31a2c29f47d06813641271221eb39d7426300697885f139078d09a172ad01f3f"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.2/cratesio-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "77b6e6cec1ee235532567bbce4bc61f8271c57ce2754e13fb015bc27df0e90a0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.1/cratesio-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "919ad7a56b82d2319883771951d6fe7da37fd4fabb7c29ad3431667eb14e3a12"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.2/cratesio-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "dd728c38719aa386d7863ea04d89fcea3fd0e6b5c36c4113fedf898d1d9bc532"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.1/cratesio-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d4caaec5c64da8e21962fab9a8e7cb03ecaca48aec0b6b98164d07b3bc8431ca"
+      url "https://github.com/joshrotenberg/cratesio-mcp/releases/download/v0.4.2/cratesio-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "de33949bf36992978a2a4f2f74e508e54c428514ef03c19963270ac841766226"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -48,10 +48,18 @@ class CratesioMcp < Formula
   end
 
   def install
-    bin.install "cratesio-mcp" if OS.mac? && Hardware::CPU.arm?
-    bin.install "cratesio-mcp" if OS.mac? && Hardware::CPU.intel?
-    bin.install "cratesio-mcp" if OS.linux? && Hardware::CPU.arm?
-    bin.install "cratesio-mcp" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "cratesio-mcp"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "cratesio-mcp"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "cratesio-mcp"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "cratesio-mcp"
+    end
 
     install_binary_aliases!
 
