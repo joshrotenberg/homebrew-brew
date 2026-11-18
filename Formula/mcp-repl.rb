@@ -1,25 +1,25 @@
 class McpRepl < Formula
   desc "Interactive MCP client that turns a server's surface into terminal commands"
   homepage "https://github.com/joshrotenberg/mcp-repl"
-  version "0.3.11"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.11/mcp-repl-aarch64-apple-darwin.tar.gz"
-      sha256 "04d41fb1b5df0ad68d8db34119d5958c9e254ab91b2cbd159895ae527c1374d0"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.4.0/mcp-repl-aarch64-apple-darwin.tar.gz"
+      sha256 "f2c8cad502684c244a7b742ec32007340fcc8ced4637f4a2dc97bf0fadaac292"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.11/mcp-repl-x86_64-apple-darwin.tar.gz"
-      sha256 "64ced09432891b7ebb0d4911e469b5a6b33cd70cdeecd531eecae7185de26d17"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.4.0/mcp-repl-x86_64-apple-darwin.tar.gz"
+      sha256 "dea08d36416e5ce33f72f8d18d62db5dd7874140028545235bd3b226f2c04b83"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.11/mcp-repl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "91d3b5f88d2c09644fe0621b698f25aa938edbcebc99930b57db5b3d34482642"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.4.0/mcp-repl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "77fa6ee45a3d17fcf0c05b2188f23bdd6138a084e678da1c160b4d1f7e9d5380"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.3.11/mcp-repl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "307ce5209c7e38183b02db5f251c17afd0ca7446ed02f1e2eb6e7b20566cc5ed"
+      url "https://github.com/joshrotenberg/mcp-repl/releases/download/v0.4.0/mcp-repl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "eccbde4202853ec4807cccd98f8a2e2e53dcc48ab0a5026b48489c86037986a9"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
